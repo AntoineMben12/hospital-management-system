@@ -5,7 +5,14 @@
 /* ── Sidebar toggle (mobile) ─────────────────────────────────── */
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
-  if (sidebar) sidebar.classList.toggle('open');
+  const overlay = document.getElementById('sidebarOverlay');
+  if (sidebar) {
+    sidebar.classList.toggle('open');
+    // Toggle overlay visibility
+    if (overlay) {
+      overlay.classList.toggle('active');
+    }
+  }
 }
 
 // Close sidebar when clicking outside on mobile

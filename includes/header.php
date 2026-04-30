@@ -39,6 +39,9 @@ $homeUrl = dashboardUrl();
 <body>
 <div class="app-layout">
 
+    <!-- ── Sidebar Overlay (mobile) ─────────────────────────── -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
     <!-- ── Sidebar ──────────────────────────────────────── -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-brand">
