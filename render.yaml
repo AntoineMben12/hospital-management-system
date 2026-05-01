@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: hospital-management-system
+    env: php
+    plan: free
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:10000"
+    staticSite: false
+    envVars:
+      - key: PHP_VERSION
+        value: 7.4
+    healthCheckPath: /index.php
